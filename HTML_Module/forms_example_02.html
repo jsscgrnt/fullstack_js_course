@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liga dos Astronautas</title>
+</head>
+<body>
+    <h2>Cadastro da liga dos astronautas</h2>
+    <div>
+        <form>
+            <label for="name" >Nome:</label>
+            <input type="text" id="name" placeholder="Digite o Nome" required>
+        </form>
+    </div>
+    <br>
+    <div>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required> 
+            <label for='psswd'> - Senha: </label>
+            <input type="password" id='psswd' required>
+        </form> 
+    </div>
+    <br>
+    <div>
+        <form>
+            <label for="data">Data de Nascimento: </label>
+            <input type="date" id="data" required>
+            <label for="foto"> - Foto: </label>
+            <input type="file" id="foto" required>
+        </form>
+    </div>
+    <br>
+    <div>
+        <form>
+            <label for="nacionalidade">Nacionalidade:</label>
+            <select id="nacionalidade" name="nacionalidade">
+                <option value="Brasil">Brasil</option>
+                <option value="Noruega">Noruega</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+            </select>
+            - Gênero: 
+            <label for="Feminino">Feminino</label>
+            <input type="radio" id="Feminino" name="genero" value="Feminino"> 
+            <label for="Masculino">Masculino</label>
+            <input type="radio" id="Masculino" name="genero" value="Masculino">
+            <label for="Outro">Outro</label>
+            <input type="radio" id="Outro" name="genero" value="Outro">
+        </form>
+    </div>
+    <br>
+    <div>
+        <form>
+            <label for="habilidades">Suas principais habilidades:</label>
+            <br>
+            <label for="Inteligencia">Inteligência </label>
+            <input type="checkbox" id="Inteligencia" name="Inteligencia" value="Inteligencia">
+
+            <label for="Resiliencia">| Resiliência </label>
+            <input type="checkbox" id="Resiliencia" name="Resiliencia" value="Resiliencia">
+            
+            <label for="PreparoFisico">| Preparo Físico </label>
+            <input type="checkbox" id="PreparoFisico" name="PreparoFisico" value="PreparoFisico">
+            
+            <label for="Educacao">| Educação </label>
+            <input type="checkbox" id="Educacao" name='Educacao' value="Educacao">
+        </form>
+    </div>
+    <br>
+    <div>
+        <textarea id="textoarea" name="textoarea" placeholder="Por que você gostaria de ser um astronauta?" rows="5" cols="33">Digite aqui</textarea>
+    </div>
+    <form>
+        <h3><input type="submit" value="Enviar"></h3>
+    </form>
+</body>
+</html>
